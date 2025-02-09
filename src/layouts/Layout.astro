@@ -11,23 +11,22 @@ import Footer from "@components/Footer.astro";
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-		
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="/src/styles/global.css">
+
 		<title>PI Landing</title>
 	</head>
 	<body>
-		<Header c/>
+		<Header />
 		<main>
 			<slot />
 		</main>
 		<Footer />
 	</body>
 </html>
-
-<style>
-	body {
-		font-family: theme("fontFamily.poppins");
-	}
-</style>

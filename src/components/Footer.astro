@@ -1,1 +1,123 @@
-<footer>Footer</footer>
+---
+import Badges from "./Badges.astro";
+---
+
+<footer class="w-full bg-primary">
+    <div class="max-w-[1440px] mx-auto p-20 space-y-12">
+        <!-- Contenedor de columnas -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-14 text-white">
+            <!-- Columna 1: Logo y descripción -->
+            <div class="space-y-5">
+                <a href="#" class="text-white font-bold text-2xl">
+                    d<span class="text-secondary">IA</span>betesTrack
+                </a>
+                <p class="text-xl font-medium">
+                    Mejora tu salud con el monitoreo de diabetes inteligente
+                    impulsado por inteligencia artificial.
+                </p>
+                <Badges />
+            </div>
+
+            <!-- Columna 2: Menú de navegación -->
+            <div class="flex flex-col space-y-5">
+                <h4 class="font-semibold text-2xl">Navegación</h4>
+                <ul class="space-y-2">
+                    <li>
+                        <a href="#" class="text-xl hover:text-secondary"
+                            >Inicio</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#" class="text-xl hover:text-secondary"
+                            >Cómo funciona</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#" class="text-xl hover:text-secondary"
+                            >App web</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#" class="text-xl hover:text-secondary"
+                            >App móvil</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#" class="text-xl hover:text-secondary">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Columna 3: Recursos utiles -->
+            <div class="flex flex-col space-y-5">
+                <h4 class="font-semibold text-2xl">Recursos útiles</h4>
+                <ul class="space-y-2">
+                    <li>
+                        <a href="#" class="text-xl hover:text-secondary"
+                            >Guía de usuario</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#" class="text-xl hover:text-secondary"
+                            >Documentación</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#" class="text-xl hover:text-secondary">Blog</a
+                        >
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Columna 4: Redes Sociales -->
+            <div class="flex flex-col space-y-5">
+                <h4 class="font-semibold text-2xl">Síguenos</h4>
+                <ul class="space-y-2">
+                    <li>
+                        <a
+                            href="#"
+                            class="text-xl hover:text-secondary flex items-center"
+                            ><i class="fa-brands fa-facebook mr-3"></i> Facebook</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#"
+                            class="text-xl hover:text-secondary flex items-center"
+                            ><i class="fa-brands fa-instagram mr-3"></i> Instagram</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#"
+                            class="text-xl hover:text-secondary flex items-center"
+                            ><i class="fa-brands fa-x-twitter mr-3"></i> X</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="border-t border-white" />
+
+        <!-- Contenedor de avisos legales -->
+        <div
+            class="flex justify-between items-center text-white text-sm opacity-80"
+        >
+            <p>© 2025 dIAbetesTrack. Todos los derechos reservados.</p>
+            <div class="flex space-x-4">
+                <a href="#" class="hover:text-secondary"
+                    >Política de privacidad</a
+                >
+                <span>|</span>
+                <a href="#" class="hover:text-secondary"
+                    >Términos y condiciones</a
+                >
+                <span>|</span>
+                <a href="#" class="hover:text-secondary"
+                    >Configuración de cookies</a
+                >
+            </div>
+        </div>
+    </div>
+</footer>
