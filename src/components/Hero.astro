@@ -1,0 +1,30 @@
+---
+import Badges from "./Badges.astro";
+---
+
+<section class="w-full bg-primary py-20">
+    <div
+        class="max-w-[1440px] mx-auto px-20 flex justify-between items-center gap-24"
+    >
+        <!-- Sección izquierda -->
+        <div class="space-y-9">
+            <h1 class="text-white font-semibold text-7xl leading-[80px]">
+                Monitorea tu diabetes con
+                <span class="text-secondary">inteligencia artificial</span>
+            </h1>
+
+            <p class="text-white text-lg font-medium">
+                Aplicación móvil de auto monitoreo para personas con diabetes y
+                complicaciones derivadas. Aplicación web de monitoreo remoto
+                para profesionales de la salud.
+            </p>
+
+            <Badges />
+        </div>
+
+        <!-- Sección derecha -->
+        <div>
+            <img src="img/hero.png" alt="Hero" />
+        </div>
+    </div>
+</section>

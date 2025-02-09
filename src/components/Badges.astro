@@ -1,0 +1,12 @@
+---
+const { className = "" } = Astro.props
+---
+
+<div class={`flex items-center gap-4 ${className}`}>
+    <a href="https://play.google.com/store" target="_blank" rel="noopener noreferrer">
+        <img src="/img/google-play-badge.png" alt="Disponible en Google Play" class="w-40" />
+    </a>
+    <a href="https://www.apple.com/app-store/" target="_blank" rel="noopener noreferrer">
+        <img src="/img/app-store-badge.png" alt="Disponible en App Store" class="w-40" />
+    </a>
+</div>
