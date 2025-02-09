@@ -1,48 +1,58 @@
-# Astro Starter Kit: Basics
+# Landing Page del Proyecto Integrador
 
-```sh
-npm create astro@latest -- --template basics
-```
+Este repositorio contiene la **Landing Page** del Proyecto Integrador.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## Diseño de la Landing Page
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+El diseño de la landing page fue creado en **Figma**. Puedes ver el diseño original del proyecto en el siguiente enlace:
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+[Figma - Diseño de la Landing Page](https://www.figma.com/design/16heabsRtywk3KXB4DbMez/Landing-page---PI?node-id=0-1&t=MQuYqgvw4P9u6pHp-1)
 
-## 🚀 Project Structure
+---
 
-Inside of your Astro project, you'll see the following folders and files:
+## Tecnologías Utilizadas
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+- **Astro**: Framework para construir sitios web rápidos, ideal para renderizar páginas estáticas y optimizar la carga.
+- **Tailwind CSS**: Framework CSS para un diseño eficiente y flexible, basado en utilidades.
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+---
 
-## 🧞 Commands
+## Secciones de la Landing Page
 
-All commands are run from the root of the project, from a terminal:
+![Landing Page Completa](https://github.com/user-attachments/assets/fe8315ce-3645-4ea7-9c61-236f81fbcbd1)
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+Las secciones mostradas en la imagen son las siguientes:
 
-## 👀 Want to learn more?
+1. **Hero**: La sección principal que presenta una introducción visual atractiva.
+2. **How it Works - Mobile**: Explicación del funcionamiento de la aplicación móvil.
+3. **How it Works - Web**: La misma explicación, pero adaptada para la versión de escritorio.
+4. **Features - Mobile**: Presentación de las características de la aplicación móvil.
+5. **CTA - Mobile**: Llamada a la acción (Call to Action) en la aplicación móvil.
+6. **Features - Web**: Las mismas características, pero en la vista de escritorio.
+7. **CTA - Web**: Llamada a la acción para la versión web.
+8. **FAQ**: Sección donde se resuelven las preguntas frecuentes.
+9. **Footer**: El pie de página con la información de contacto y redes sociales.
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+---
+
+## Instrucciones para la instalación
+
+1. Clona este repositorio:
+   ```bash
+   git clone https://github.com/chrisdev-ts/landing-pi.git
+   ```
+
+2. Dirigete al directorio del proyecto
+    ```bash
+    cd landing-pi
+    ```
+
+3. Instala las dependencias
+    ```bash
+    npm install
+    ```
+
+4. Inicia el servidor
+    ```bash
+    npm run dev
+    ```
