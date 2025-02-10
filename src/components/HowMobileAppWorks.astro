@@ -4,8 +4,9 @@ import Badges from "./Badges.astro";
 
 <section class="w-full bg-tertiary py-20">
     <div class="max-w-[1440px] mx-auto px-20 flex flex-col gap-10">
-        <!-- Título centrado -->
-        <h1 class="text-primary font-semibold text-3xl text-center">Cómo funciona la aplicación móvil</h1>
+        <h1 class="text-primary font-semibold text-3xl text-center">
+            Cómo funciona la aplicación móvil
+        </h1>
 
         <!-- Bento -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -13,67 +14,123 @@ import Badges from "./Badges.astro";
             <div class="bg-white p-7 rounded-lg space-y-7">
                 <!-- Card 1 -->
                 <div class="flex items-center gap-6">
-                    <div class="w-10 h-10 flex items-center justify-center bg-primary text-white font-semibold rounded-full text-lg">1</div>
-                    <h2 class="text-primary font-medium text-2xl">Instala la aplicación en tu celular</h2>
+                    <div
+                        class="w-10 h-10 flex items-center justify-center bg-primary text-white font-semibold rounded-full text-lg"
+                    >
+                        1
+                    </div>
+                    <h2 class="text-primary font-medium text-2xl">
+                        Instala la aplicación en tu celular
+                    </h2>
                 </div>
-                <p class="text-gray-700 text-xl">La puedes encontrar completamente gratis desde la Play Store en tu android o desde la App Store en tu IPhone.</p>
+                <p class="text-gray-700 text-xl">
+                    La puedes encontrar completamente gratis desde la Play Store
+                    en tu android o desde la App Store en tu IPhone.
+                </p>
                 <Badges />
             </div>
 
-            <!-- Card 2 con imagen a la izquierda -->
-            <div class="bg-white p-7 rounded-lg relative flex flex-col gap-6 overflow-hidden">
-                <!-- Título y número arriba -->
+            <!-- Card 2 -->
+            <div
+                class="bg-white p-7 rounded-lg relative flex flex-col gap-6 overflow-hidden"
+            >
                 <div class="flex items-center gap-6">
-                    <div class="w-10 h-10 flex items-center justify-center bg-primary text-white font-semibold rounded-full text-lg">2</div>
-                    <h2 class="text-primary font-medium text-2xl">Inicia sesión o regístrate</h2>
+                    <div
+                        class="w-10 h-10 flex items-center justify-center bg-primary text-white font-semibold rounded-full text-lg"
+                    >
+                        2
+                    </div>
+                    <h2 class="text-primary font-medium text-2xl">
+                        Inicia sesión o regístrate
+                    </h2>
                 </div>
 
-                <!-- Contenedor de imagen y descripciones -->
                 <div class="flex gap-6">
-                    <!-- Imagen emergiendo -->
-                    <img src="img/phone.png" alt="App en celular" 
-                        class="w-1/2 object-cover object-top rounded-lg -mb-96">
+                    <img
+                        src="img/phone.png"
+                        alt="App en celular"
+                        class="w-1/2 object-cover object-top rounded-lg -mb-96"
+                    />
 
-                    <!-- Descripciones -->
                     <div class="space-y-7 w-1/2">
-                        <p class="text-gray-700 text-xl">Ingresa tus credenciales si ya tienes una cuenta.</p>
-                        <p class="text-gray-700 text-xl">Si eres un usuario nuevo, crea una cuenta.</p>
+                        <p class="text-gray-700 text-xl">
+                            Ingresa tus credenciales si ya tienes una cuenta.
+                        </p>
+                        <p class="text-gray-700 text-xl">
+                            Si eres un usuario nuevo, crea una cuenta.
+                        </p>
                     </div>
                 </div>
             </div>
 
             <!-- Fila inferior -->
             <div class="grid grid-cols-3 gap-6 lg:col-span-2">
-                <!-- Card 3 con imagen debajo -->
-                <div class="bg-white p-7 rounded-lg relative col-span-1 gap-6 flex flex-col overflow-hidden">
+                <!-- Card 3 -->
+                <div
+                    class="bg-white p-7 rounded-lg relative col-span-1 gap-6 flex flex-col overflow-hidden"
+                >
                     <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 flex items-center justify-center bg-primary text-white font-semibold rounded-full text-lg">3</div>
-                        <h2 class="text-primary font-medium text-2xl">Monitorea tu diabetes</h2>
+                        <div
+                            class="w-10 h-10 flex items-center justify-center bg-primary text-white font-semibold rounded-full text-lg"
+                        >
+                            3
+                        </div>
+                        <h2 class="text-primary font-medium text-2xl">
+                            Monitorea tu diabetes
+                        </h2>
                     </div>
-                    <p class="text-gray-700 text-xl">Realiza un seguimiento de tu diabetes en tiempo real.</p>
-                    
-                    <!-- Imagen emergiendo -->
-                    <img src="img/phone.png" alt="App en celular" 
-                        class="w-full object-contain object-top rounded-lg -mb-[34rem]">
+                    <p class="text-gray-700 text-xl">
+                        Realiza un seguimiento de tu diabetes en tiempo real.
+                    </p>
+
+                    <img
+                        src="img/phone.png"
+                        alt="App en celular"
+                        class="w-full object-contain object-top rounded-lg -mb-[34rem]"
+                    />
                 </div>
 
-
-                <!-- Card 4 con imagen a la derecha -->
-                <div class="bg-white relative p-7 rounded-lg col-span-2 flex gap-6 overflow-hidden">
+                <!-- Card 4 -->
+                <div
+                    class="bg-white relative p-7 rounded-lg col-span-2 flex gap-6 overflow-hidden"
+                >
                     <div class="space-y-7 flex-1 w-7/12">
                         <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 flex items-center justify-center bg-primary text-white font-semibold rounded-full text-lg">4</div>
-                            <h2 class="text-primary font-medium text-2xl">Predice complicaciones</h2>
+                            <div
+                                class="w-10 h-10 flex items-center justify-center bg-primary text-white font-semibold rounded-full text-lg"
+                            >
+                                4
+                            </div>
+                            <h2 class="text-primary font-medium text-2xl">
+                                Predice complicaciones
+                            </h2>
                         </div>
-                        <p class="text-gray-700 text-xl">Nuestro potente algoritmo de inteligencia artificial analiza tus datos históricos para predecir posibles complicaciones.</p>
-                        
+                        <p class="text-gray-700 text-xl">
+                            Nuestro potente algoritmo de inteligencia artificial
+                            analiza tus datos históricos para predecir posibles
+                            complicaciones.
+                        </p>
+
                         <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 flex items-center justify-center bg-primary text-white font-semibold rounded-full text-lg">5</div>
-                            <h2 class="text-primary font-medium text-2xl">Genera reportes</h2>
+                            <div
+                                class="w-10 h-10 flex items-center justify-center bg-primary text-white font-semibold rounded-full text-lg"
+                            >
+                                5
+                            </div>
+                            <h2 class="text-primary font-medium text-2xl">
+                                Genera reportes
+                            </h2>
                         </div>
-                        <p class="text-gray-700 text-xl">Puedes exportar reportes en diferentes formatos y compartirlos con tu médico de confianza.</p>
+                        <p class="text-gray-700 text-xl">
+                            Puedes exportar reportes en diferentes formatos y
+                            compartirlos con tu médico de confianza.
+                        </p>
                     </div>
-                    <img src="img/phone.png" alt="App en celular" class="w-5/12 object-contain object-top rounded-lg -mb-96">
+                    <img
+                        src="img/phone.png"
+                        alt="App en celular"
+                        class="w-5/12 object-contain object-top rounded-lg -mb-96"
+                    />
                 </div>
             </div>
         </div>
