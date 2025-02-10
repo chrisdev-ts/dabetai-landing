@@ -3,9 +3,9 @@ import Badges from "./Badges.astro";
 ---
 
 <footer class="w-full bg-primary py-10">
-    <div class="max-w-[1440px] mx-auto px-20 space-y-12">
+    <div class="max-w-[1440px] mx-auto px-6 sm:px-10 md:px-20 space-y-12">
         <!-- Contenedor de columnas -->
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-14 text-white">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-14 text-white">
             <!-- Columna 1: Logo y descripción -->
             <div class="space-y-5">
                 <a href="#">
@@ -26,9 +26,7 @@ import Badges from "./Badges.astro";
                         <a href="#" class="hover:text-secondary">Inicio</a>
                     </li>
                     <li>
-                        <a href="#" class="hover:text-secondary"
-                            >Cómo funciona</a
-                        >
+                        <a href="#" class="hover:text-secondary">Cómo funciona</a>
                     </li>
                     <li>
                         <a href="#" class="hover:text-secondary">App web</a>
@@ -42,19 +40,15 @@ import Badges from "./Badges.astro";
                 </ul>
             </div>
 
-            <!-- Columna 3: Recursos utiles -->
+            <!-- Columna 3: Recursos útiles -->
             <div class="flex flex-col space-y-5">
                 <h4 class="font-semibold text-lg">Recursos útiles</h4>
                 <ul class="space-y-2">
                     <li>
-                        <a href="#" class="hover:text-secondary"
-                            >Guía de usuario</a
-                        >
+                        <a href="#" class="hover:text-secondary">Guía de usuario</a>
                     </li>
                     <li>
-                        <a href="#" class="hover:text-secondary"
-                            >Documentación</a
-                        >
+                        <a href="#" class="hover:text-secondary">Documentación</a>
                     </li>
                     <li>
                         <a href="#" class="hover:text-secondary">Blog</a>
@@ -67,25 +61,19 @@ import Badges from "./Badges.astro";
                 <h4 class="font-semibold text-lg">Síguenos</h4>
                 <ul class="space-y-2">
                     <li>
-                        <a
-                            href="#"
-                            class="hover:text-secondary flex items-center"
-                            ><i class="fa-brands fa-facebook mr-3"></i> Facebook</a
-                        >
+                        <a href="#" class="hover:text-secondary flex items-center">
+                            <i class="fa-brands fa-facebook mr-3"></i> Facebook
+                        </a>
                     </li>
                     <li>
-                        <a
-                            href="#"
-                            class="hover:text-secondary flex items-center"
-                            ><i class="fa-brands fa-instagram mr-3"></i> Instagram</a
-                        >
+                        <a href="#" class="hover:text-secondary flex items-center">
+                            <i class="fa-brands fa-instagram mr-3"></i> Instagram
+                        </a>
                     </li>
                     <li>
-                        <a
-                            href="#"
-                            class="hover:text-secondary flex items-center"
-                            ><i class="fa-brands fa-x-twitter mr-3"></i> X</a
-                        >
+                        <a href="#" class="hover:text-secondary flex items-center">
+                            <i class="fa-brands fa-x-twitter mr-3"></i> X
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -94,22 +82,14 @@ import Badges from "./Badges.astro";
         <hr class="border-t border-white" />
 
         <!-- Contenedor de avisos legales -->
-        <div
-            class="flex justify-between items-center text-white text-sm opacity-80"
-        >
+        <div class="flex flex-col sm:flex-row justify-between items-center text-white text-sm opacity-80">
             <p>© 2025 diabetestrack. Todos los derechos reservados.</p>
-            <div class="flex space-x-4">
-                <a href="#" class="hover:text-secondary"
-                    >Política de privacidad</a
-                >
+            <div class="flex space-x-4 mt-4 sm:mt-0">
+                <a href="#" class="hover:text-secondary">Política de privacidad</a>
                 <span>|</span>
-                <a href="#" class="hover:text-secondary"
-                    >Términos y condiciones</a
-                >
+                <a href="#" class="hover:text-secondary">Términos y condiciones</a>
                 <span>|</span>
-                <a href="#" class="hover:text-secondary"
-                    >Configuración de cookies</a
-                >
+                <a href="#" class="hover:text-secondary">Configuración de cookies</a>
             </div>
         </div>
     </div>
