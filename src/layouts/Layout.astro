@@ -1,6 +1,25 @@
 ---
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
+
+const menuLinks = [
+	{ label: "Inicio", href: "#hero" },
+	{ label: "Aplicación móvil", href: "#mobile-app-features" },
+	{ label: "Aplicación web", href: "#web-app-features" },
+	{ label: "FAQ", href: "#faq" },
+];
+
+const resources = [
+	{ label: "Guía de usuario", href: "#" },
+	{ label: "Documentación", href: "#" },
+	{ label: "Blog", href: "#" },
+];
+
+const socialLinks = [
+	{ label: "Facebook", href: "#", icon: "fa-brands fa-facebook" },
+	{ label: "Instagram", href: "#", icon: "fa-brands fa-instagram" },
+	{ label: "X", href: "#", icon: "fa-brands fa-x-twitter" },
+];
 ---
 
 <!doctype html>
@@ -18,15 +37,19 @@ import Footer from "@components/Footer.astro";
 			rel="stylesheet"
 		/>
 
-		<link rel="stylesheet" href="/src/styles/global.css">
+		<link rel="stylesheet" href="/src/styles/global.css" />
 
 		<title>dIAbetesTrack</title>
 	</head>
 	<body>
-		<Header />
+		<Header links={menuLinks} />
 		<main>
 			<slot />
 		</main>
-		<Footer />
+		<Footer
+			navLinks={menuLinks}
+			resources={resources}
+			socialLinks={socialLinks}
+		/>
 	</body>
 </html>
