@@ -56,20 +56,20 @@ const features = [
 ];
 ---
 
-<Section id="mobile-app-features" bgColor="bg-info">
+<Section id="mobile-app-features" bgColor="bg-tertiary">
     <h1 class="text-primary font-semibold text-2xl text-center">
         Automonitoreo para el paciente
     </h1>
 
-    <!-- Contenedor de columnas -->
-    <div class="grid grid-cols-3 items-center">
-        <!-- Columna 1 -->
-        <div class="flex flex-col h-full justify-between">
+    <!-- Contenedor responsive -->
+    <div class="grid grid-cols-1 md:grid-cols-3 items-center gap-6">
+        <!-- Columna 1 (Alineado a la derecha en pantallas grandes) -->
+        <div class="hidden md:flex flex-col space-y-6 md:space-y-10">
             {
                 features
                     .filter((f) => f.align === "right")
                     .map((feature) => (
-                        <div class="flex items-center gap-5 justify-end">
+                        <div class="flex items-center gap-5 md:justify-end">
                             <div class="text-end space-y-3">
                                 <h2 class="font-medium text-primary">
                                     {feature.title}
@@ -84,8 +84,8 @@ const features = [
             }
         </div>
 
-        <!-- Columna 2 (Imagen Central) -->
-        <div class="flex justify-center">
+        <!-- Imagen del celular (se mueve abajo en pantallas pequeñas) -->
+        <div class="flex justify-center order-last md:order-none">
             <img
                 src="img/phone.png"
                 alt="App en celular"
@@ -93,8 +93,29 @@ const features = [
             />
         </div>
 
-        <!-- Columna 3 -->
-        <div class="flex flex-col h-full justify-between">
+        <!-- Columna 3 (Alineado a la izquierda en pantallas grandes) -->
+        <div class="md:hidden flex flex-col space-y-6 md:space-y-10">
+            {
+                features
+                    .filter((f) => f.align === "right")
+                    .map((feature) => (
+                        <div class="flex items-center gap-5">
+                            <div class="w-14 h-14 flex items-center justify-center bg-white text-primary rounded-full text-2xl shrink-0">
+                                <i class={feature.icon} />
+                            </div>
+                            <div class="text-start space-y-3">
+                                <h2 class="font-medium text-primary">
+                                    {feature.title}
+                                </h2>
+                                <p>{feature.description}</p>
+                            </div>
+                        </div>
+                    ))
+            }
+        </div>
+        
+        <!-- Columna 3 (Alineado a la izquierda en pantallas grandes) -->
+        <div class="flex flex-col space-y-6 md:space-y-10">
             {
                 features
                     .filter((f) => f.align === "left")
@@ -103,7 +124,7 @@ const features = [
                             <div class="w-14 h-14 flex items-center justify-center bg-white text-primary rounded-full text-2xl shrink-0">
                                 <i class={feature.icon} />
                             </div>
-                            <div class="space-y-3">
+                            <div class="text-start space-y-3">
                                 <h2 class="font-medium text-primary">
                                     {feature.title}
                                 </h2>
