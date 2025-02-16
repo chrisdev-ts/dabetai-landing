@@ -1,138 +1,137 @@
 ---
 import Badges from "./Badges.astro";
+import Section from "./Section.astro";
 ---
 
-<section class="w-full bg-tertiary py-10">
-    <div class="max-w-[1440px] mx-auto px-20 flex flex-col gap-10">
-        <h1 class="text-primary font-semibold text-2xl text-center">
-            Cómo funciona la aplicación móvil
-        </h1>
+<Section bgColor="bg-tertiary">
+    <h1 class="text-primary font-semibold text-2xl text-center">
+        Cómo funciona la aplicación móvil
+    </h1>
 
-        <!-- Bento -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
-            <!-- Fila superior -->
-            <div class="bg-white p-6 rounded-lg space-y-5">
-                <!-- Card 1 -->
-                <div class="flex items-center gap-4">
-                    <div
-                        class="w-8 h-8 flex items-center justify-center bg-primary text-white font-semibold rounded-full"
-                    >
-                        1
-                    </div>
-                    <h2 class="text-primary font-medium text-lg">
-                        Instala la aplicación en tu celular
-                    </h2>
-                </div>
-                <p class="text-gray-700 ">
-                    La puedes encontrar completamente gratis desde la Play Store
-                    en tu android o desde la App Store en tu IPhone.
-                </p>
-                <Badges className="w-72" />
-            </div>
-
-            <!-- Card 2 -->
-            <div
-                class="bg-white p-6 rounded-lg relative flex flex-col gap-4 overflow-hidden"
-            >
-                <div class="flex items-center gap-4">
-                    <div
-                        class="w-8 h-8 flex items-center justify-center bg-primary text-white font-semibold rounded-full"
-                    >
-                        2
-                    </div>
-                    <h2 class="text-primary font-medium text-lg">
-                        Inicia sesión o regístrate
-                    </h2>
-                </div>
-
-                <div class="flex gap-4">
-                    <img
-                        src="img/phone.png"
-                        alt="App en celular"
-                        class="w-1/2 object-contain object-top rounded-lg -mb-[800px]"
-                    />
-
-                    <div class="space-y-5 w-1/2">
-                        <p class="text-gray-700 ">
-                            Ingresa tus credenciales si ya tienes una cuenta.
-                        </p>
-                        <p class="text-gray-700 ">
-                            Si eres un usuario nuevo, crea una cuenta.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Fila inferior -->
-            <div class="grid grid-cols-3 gap-4 lg:col-span-2">
-                <!-- Card 3 -->
+    <!-- Bento -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <!-- Fila superior -->
+        <div class="bg-white p-6 rounded-lg space-y-5">
+            <!-- Card 1 -->
+            <div class="flex items-center gap-4">
                 <div
-                    class="bg-white p-6 rounded-lg relative col-span-1 gap-4 flex flex-col overflow-hidden"
+                    class="w-8 h-8 flex items-center justify-center bg-primary text-white font-semibold rounded-full"
                 >
+                    1
+                </div>
+                <h2 class="text-primary font-medium text-lg">
+                    Instala la aplicación en tu celular
+                </h2>
+            </div>
+            <p class="text-gray-700">
+                La puedes encontrar completamente gratis desde la Play Store en
+                tu android o desde la App Store en tu IPhone.
+            </p>
+            <Badges className="w-72" />
+        </div>
+
+        <!-- Card 2 -->
+        <div
+            class="bg-white p-6 rounded-lg relative flex flex-col gap-4 overflow-hidden"
+        >
+            <div class="flex items-center gap-4">
+                <div
+                    class="w-8 h-8 flex items-center justify-center bg-primary text-white font-semibold rounded-full"
+                >
+                    2
+                </div>
+                <h2 class="text-primary font-medium text-lg">
+                    Inicia sesión o regístrate
+                </h2>
+            </div>
+
+            <div class="flex gap-4">
+                <img
+                    src="img/phone.png"
+                    alt="App en celular"
+                    class="w-1/2 object-contain object-top rounded-lg -mb-[800px]"
+                />
+
+                <div class="space-y-5 w-1/2">
+                    <p class="text-gray-700">
+                        Ingresa tus credenciales si ya tienes una cuenta.
+                    </p>
+                    <p class="text-gray-700">
+                        Si eres un usuario nuevo, crea una cuenta.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fila inferior -->
+        <div class="grid grid-cols-3 gap-4 lg:col-span-2">
+            <!-- Card 3 -->
+            <div
+                class="bg-white p-6 rounded-lg relative col-span-1 gap-4 flex flex-col overflow-hidden"
+            >
+                <div class="flex items-center gap-3">
+                    <div
+                        class="w-8 h-8 flex items-center justify-center bg-primary text-white font-semibold rounded-full"
+                    >
+                        3
+                    </div>
+                    <h2 class="text-primary font-medium text-lg">
+                        Monitorea tu diabetes
+                    </h2>
+                </div>
+                <p class="text-gray-700">
+                    Realiza un seguimiento de tu diabetes en tiempo real.
+                </p>
+
+                <img
+                    src="img/phone.png"
+                    alt="App en celular"
+                    class="w-full object-cover object-top rounded-lg -mb-[34rem]"
+                />
+            </div>
+
+            <!-- Card 4 -->
+            <div
+                class="bg-white relative p-6 rounded-lg col-span-2 flex gap-4 overflow-hidden"
+            >
+                <div class="space-y-5 flex-1 w-7/12">
                     <div class="flex items-center gap-3">
                         <div
                             class="w-8 h-8 flex items-center justify-center bg-primary text-white font-semibold rounded-full"
                         >
-                            3
+                            4
                         </div>
                         <h2 class="text-primary font-medium text-lg">
-                            Monitorea tu diabetes
+                            Predice complicaciones
                         </h2>
                     </div>
-                    <p class="text-gray-700 ">
-                        Realiza un seguimiento de tu diabetes en tiempo real.
+                    <p class="text-gray-700">
+                        Nuestro potente algoritmo de inteligencia artificial
+                        analiza tus datos históricos para predecir posibles
+                        complicaciones.
                     </p>
 
-                    <img
-                        src="img/phone.png"
-                        alt="App en celular"
-                        class="w-full object-cover object-top rounded-lg -mb-[34rem]"
-                    />
-                </div>
-
-                <!-- Card 4 -->
-                <div
-                    class="bg-white relative p-6 rounded-lg col-span-2 flex gap-4 overflow-hidden"
-                >
-                    <div class="space-y-5 flex-1 w-7/12">
-                        <div class="flex items-center gap-3">
-                            <div
-                                class="w-8 h-8 flex items-center justify-center bg-primary text-white font-semibold rounded-full"
-                            >
-                                4
-                            </div>
-                            <h2 class="text-primary font-medium text-lg">
-                                Predice complicaciones
-                            </h2>
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="w-8 h-8 flex items-center justify-center bg-primary text-white font-semibold rounded-full"
+                        >
+                            5
                         </div>
-                        <p class="text-gray-700 ">
-                            Nuestro potente algoritmo de inteligencia artificial
-                            analiza tus datos históricos para predecir posibles
-                            complicaciones.
-                        </p>
-
-                        <div class="flex items-center gap-3">
-                            <div
-                                class="w-8 h-8 flex items-center justify-center bg-primary text-white font-semibold rounded-full"
-                            >
-                                5
-                            </div>
-                            <h2 class="text-primary font-medium text-lg">
-                                Genera reportes
-                            </h2>
-                        </div>
-                        <p class="text-gray-700 ">
-                            Puedes exportar reportes en diferentes formatos y
-                            compartirlos con tu médico de confianza.
-                        </p>
+                        <h2 class="text-primary font-medium text-lg">
+                            Genera reportes
+                        </h2>
                     </div>
-                    <img
-                        src="img/phone.png"
-                        alt="App en celular"
-                        class="w-5/12 object-contain object-top rounded-lg -mb-96"
-                    />
+                    <p class="text-gray-700">
+                        Puedes exportar reportes en diferentes formatos y
+                        compartirlos con tu médico de confianza.
+                    </p>
                 </div>
+                <img
+                    src="img/phone.png"
+                    alt="App en celular"
+                    class="w-5/12 object-contain object-top rounded-lg -mb-96"
+                />
             </div>
         </div>
     </div>
-</section>
+</Section>

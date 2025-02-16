@@ -1,73 +1,85 @@
-<section class="w-full bg-tertiary py-10">
-    <div class="max-w-[800px] mx-auto px-6 sm:px-10 md:px-20 flex flex-col gap-10">
-        <h1 class="text-primary font-semibold text-2xl text-center">
-            Preguntas frecuentes
-        </h1>
+---
+import Section from "./Section.astro";
+---
 
-        <!-- Contenedor de Preguntas -->
-        <div class="flex flex-col divide-y divide-gray-400 select-none">
-            <details class="faq-item py-5 open">
-                <summary class="flex justify-between items-center cursor-pointer text-lg font-medium text-primary">
-                    ¿Cómo funciona la aplicación?
-                    <i class="fas fa-chevron-down text-primary"></i>
-                </summary>
-                <p class="text-gray-800 mt-2">
-                    Nuestra aplicación utiliza inteligencia artificial para
-                    monitorear y predecir posibles complicaciones de la diabetes
-                    en base a tus datos ingresados.
-                </p>
-            </details>
+<Section bgColor="bg-tertiary" innerClass="max-w-[800px]">
+    <h1 class="text-primary font-semibold text-2xl text-center">
+        Preguntas frecuentes
+    </h1>
 
-            <details class="faq-item py-5">
-                <summary class="flex justify-between items-center cursor-pointer text-lg font-medium text-primary">
-                    ¿Es gratuita la aplicación?
-                    <i class="fas fa-chevron-down text-primary"></i>
-                </summary>
-                <p class="text-gray-800 mt-2">
-                    Sí, puedes descargar y usar la aplicación de forma gratuita
-                    con funciones básicas. Hay opciones premium para
-                    características avanzadas.
-                </p>
-            </details>
+    <!-- Contenedor de Preguntas -->
+    <div class="flex flex-col divide-y divide-gray-400 select-none">
+        <details class="faq-item py-5 open">
+            <summary
+                class="flex justify-between items-center cursor-pointer text-lg font-medium text-primary"
+            >
+                ¿Cómo funciona la aplicación?
+                <i class="fas fa-chevron-down text-primary"></i>
+            </summary>
+            <p class="text-gray-800 mt-2">
+                Nuestra aplicación utiliza inteligencia artificial para
+                monitorear y predecir posibles complicaciones de la diabetes en
+                base a tus datos ingresados.
+            </p>
+        </details>
 
-            <details class="faq-item py-5">
-                <summary class="flex justify-between items-center cursor-pointer text-lg font-medium text-primary">
-                    ¿Cómo protegen mis datos?
-                    <i class="fas fa-chevron-down text-primary"></i>
-                </summary>
-                <p class="text-gray-800 mt-2">
-                    Implementamos encriptación avanzada y seguimos estrictas
-                    normativas de seguridad para proteger tu información.
-                </p>
-            </details>
+        <details class="faq-item py-5">
+            <summary
+                class="flex justify-between items-center cursor-pointer text-lg font-medium text-primary"
+            >
+                ¿Es gratuita la aplicación?
+                <i class="fas fa-chevron-down text-primary"></i>
+            </summary>
+            <p class="text-gray-800 mt-2">
+                Sí, puedes descargar y usar la aplicación de forma gratuita con
+                funciones básicas. Hay opciones premium para características
+                avanzadas.
+            </p>
+        </details>
 
-            <details class="faq-item py-5">
-                <summary class="flex justify-between items-center cursor-pointer text-lg font-medium text-primary">
-                    ¿Puedo compartir mi información con mi médico?
-                    <i class="fas fa-chevron-down text-primary"></i>
-                </summary>
-                <p class="text-gray-800 mt-2">
-                    Sí, puedes compartir tus datos con tu médico de confianza
-                    para que pueda monitorear tu progreso y darte recomendaciones.
-                </p>
-            </details>
+        <details class="faq-item py-5">
+            <summary
+                class="flex justify-between items-center cursor-pointer text-lg font-medium text-primary"
+            >
+                ¿Cómo protegen mis datos?
+                <i class="fas fa-chevron-down text-primary"></i>
+            </summary>
+            <p class="text-gray-800 mt-2">
+                Implementamos encriptación avanzada y seguimos estrictas
+                normativas de seguridad para proteger tu información.
+            </p>
+        </details>
 
-            <details class="faq-item py-5">
-                <summary class="flex justify-between items-center cursor-pointer text-lg font-medium text-primary">
-                    ¿Qué dispositivos son compatibles?
-                    <i class="fas fa-chevron-down text-primary"></i>
-                </summary>
-                <p class="text-gray-800 mt-2">
-                    Nuestra aplicación es compatible con la mayoría de los
-                    dispositivos móviles y tablets, tanto en Android como iOS.
-                </p>
-            </details>
-        </div>
+        <details class="faq-item py-5">
+            <summary
+                class="flex justify-between items-center cursor-pointer text-lg font-medium text-primary"
+            >
+                ¿Puedo compartir mi información con mi médico?
+                <i class="fas fa-chevron-down text-primary"></i>
+            </summary>
+            <p class="text-gray-800 mt-2">
+                Sí, puedes compartir tus datos con tu médico de confianza para
+                que pueda monitorear tu progreso y darte recomendaciones.
+            </p>
+        </details>
 
-        <button
-            class="text-primary bg-white font-medium rounded-lg px-6 py-2 w-fit mx-auto transition-all duration-300 hover:bg-opacity-80 hover:scale-105"
-        >
-            Ver más preguntas
-        </button>
+        <details class="faq-item py-5">
+            <summary
+                class="flex justify-between items-center cursor-pointer text-lg font-medium text-primary"
+            >
+                ¿Qué dispositivos son compatibles?
+                <i class="fas fa-chevron-down text-primary"></i>
+            </summary>
+            <p class="text-gray-800 mt-2">
+                Nuestra aplicación es compatible con la mayoría de los
+                dispositivos móviles y tablets, tanto en Android como iOS.
+            </p>
+        </details>
     </div>
-</section>
+
+    <button
+        class="text-primary bg-white font-medium rounded-lg px-6 py-2 w-fit mx-auto transition-all duration-300 hover:bg-opacity-80 hover:scale-105"
+    >
+        Ver más preguntas
+    </button>
+</Section>
