@@ -1,8 +1,62 @@
 ---
 import Section from "./Section.astro";
+
+const features = [
+    {
+        title: "Monitorea tu diabetes",
+        description:
+            "Desde nuestra aplicación móvil puedes monitorear tu diabetes en tiempo real.",
+        icon: "fas fa-chart-line",
+        align: "right",
+    },
+    {
+        title: "Registra tu glucosa",
+        description:
+            "Guarda tus niveles de glucosa de manera rápida y sencilla.",
+        icon: "fas fa-notes-medical",
+        align: "right",
+    },
+    {
+        title: "Alertas y recordatorios",
+        description: "Configura notificaciones para tomar tus medicamentos.",
+        icon: "fas fa-bell",
+        align: "right",
+    },
+    {
+        title: "Historial de datos",
+        description: "Revisa todos tus registros en un solo lugar.",
+        icon: "fas fa-calendar-alt",
+        align: "right",
+    },
+    {
+        title: "Consulta con médicos",
+        description:
+            "Comparte tus datos con especialistas para un mejor tratamiento.",
+        icon: "fas fa-user-md",
+        align: "left",
+    },
+    {
+        title: "Generación de reportes",
+        description: "Descarga informes detallados sobre tu estado de salud.",
+        icon: "fas fa-file-medical-alt",
+        align: "left",
+    },
+    {
+        title: "Seguimiento personalizado",
+        description: "Crea planes de seguimiento y establece metas de salud.",
+        icon: "fas fa-tasks",
+        align: "left",
+    },
+    {
+        title: "Análisis inteligente",
+        description: "Usamos IA para ofrecerte predicciones y recomendaciones.",
+        icon: "fas fa-dna",
+        align: "left",
+    },
+];
 ---
 
-<Section bgColor="bg-info">
+<Section id="mobile-app-features" bgColor="bg-info">
     <h1 class="text-primary font-semibold text-2xl text-center">
         Automonitoreo para el paciente
     </h1>
@@ -11,68 +65,26 @@ import Section from "./Section.astro";
     <div class="grid grid-cols-3 items-center">
         <!-- Columna 1 -->
         <div class="flex flex-col h-full justify-between">
-            <div class="flex items-center gap-5 justify-end">
-                <div class="text-end space-y-3">
-                    <h2 class="font-medium text-primary">
-                        Monitorea tu diabetes
-                    </h2>
-                    <p>
-                        Desde nuestra aplicación móvil puedes monitorear tu
-                        diabetes en tiempo real.
-                    </p>
-                </div>
-                <div
-                    class="w-14 h-14 flex items-center justify-center bg-white text-primary rounded-full text-2xl shrink-0"
-                >
-                    <i class="fas fa-chart-line"></i>
-                </div>
-            </div>
-
-            <div class="flex items-center gap-5 justify-end">
-                <div class="text-end space-y-3">
-                    <h2 class="font-medium text-primary">
-                        Registra tu glucosa
-                    </h2>
-                    <p>
-                        Guarda tus niveles de glucosa de manera rápida y
-                        sencilla.
-                    </p>
-                </div>
-                <div
-                    class="w-14 h-14 flex items-center justify-center bg-white text-primary rounded-full text-2xl shrink-0"
-                >
-                    <i class="fas fa-notes-medical"></i>
-                </div>
-            </div>
-
-            <div class="flex items-center gap-5 justify-end">
-                <div class="text-end space-y-3">
-                    <h2 class="font-medium text-primary">
-                        Alertas y recordatorios
-                    </h2>
-                    <p>Configura notificaciones para tomar tus medicamentos.</p>
-                </div>
-                <div
-                    class="w-14 h-14 flex items-center justify-center bg-white text-primary rounded-full text-2xl shrink-0"
-                >
-                    <i class="fas fa-bell"></i>
-                </div>
-            </div>
-
-            <div class="flex items-center gap-5 justify-end">
-                <div class="text-end space-y-3">
-                    <h2 class="font-medium text-primary">Historial de datos</h2>
-                    <p>Revisa todos tus registros en un solo lugar.</p>
-                </div>
-                <div
-                    class="w-14 h-14 flex items-center justify-center bg-white text-primary rounded-full text-2xl shrink-0"
-                >
-                    <i class="fas fa-calendar-alt"></i>
-                </div>
-            </div>
+            {
+                features
+                    .filter((f) => f.align === "right")
+                    .map((feature) => (
+                        <div class="flex items-center gap-5 justify-end">
+                            <div class="text-end space-y-3">
+                                <h2 class="font-medium text-primary">
+                                    {feature.title}
+                                </h2>
+                                <p>{feature.description}</p>
+                            </div>
+                            <div class="w-14 h-14 flex items-center justify-center bg-white text-primary rounded-full text-2xl shrink-0">
+                                <i class={feature.icon} />
+                            </div>
+                        </div>
+                    ))
+            }
         </div>
 
-        <!-- Columna 2 -->
+        <!-- Columna 2 (Imagen Central) -->
         <div class="flex justify-center">
             <img
                 src="img/phone.png"
@@ -83,70 +95,23 @@ import Section from "./Section.astro";
 
         <!-- Columna 3 -->
         <div class="flex flex-col h-full justify-between">
-            <div class="flex items-center gap-5">
-                <div
-                    class="w-14 h-14 flex items-center justify-center bg-white text-primary rounded-full text-2xl shrink-0"
-                >
-                    <i class="fas fa-user-md"></i>
-                </div>
-                <div class="space-y-3">
-                    <h2 class="font-medium text-primary">
-                        Consulta con médicos
-                    </h2>
-                    <p>
-                        Comparte tus datos con especialistas para un mejor
-                        tratamiento.
-                    </p>
-                </div>
-            </div>
-
-            <div class="flex items-center gap-5">
-                <div
-                    class="w-14 h-14 flex items-center justify-center bg-white text-primary rounded-full text-2xl shrink-0"
-                >
-                    <i class="fas fa-file-medical-alt"></i>
-                </div>
-                <div class="space-y-3">
-                    <h2 class="font-medium text-primary">
-                        Generación de reportes
-                    </h2>
-                    <p>
-                        Descarga informes detallados sobre tu estado de salud.
-                    </p>
-                </div>
-            </div>
-
-            <div class="flex items-center gap-5">
-                <div
-                    class="w-14 h-14 flex items-center justify-center bg-white text-primary rounded-full text-2xl shrink-0"
-                >
-                    <i class="fas fa-tasks"></i>
-                </div>
-                <div class="space-y-3">
-                    <h2 class="font-medium text-primary">
-                        Seguimiento personalizado
-                    </h2>
-                    <p>
-                        Crea planes de seguimiento y establece metas de salud.
-                    </p>
-                </div>
-            </div>
-
-            <div class="flex items-center gap-5">
-                <div
-                    class="w-14 h-14 flex items-center justify-center bg-white text-primary rounded-full text-2xl shrink-0"
-                >
-                    <i class="fas fa-dna"></i>
-                </div>
-                <div class="space-y-3">
-                    <h2 class="font-medium text-primary">
-                        Análisis inteligente
-                    </h2>
-                    <p>
-                        Usamos IA para ofrecerte predicciones y recomendaciones.
-                    </p>
-                </div>
-            </div>
+            {
+                features
+                    .filter((f) => f.align === "left")
+                    .map((feature) => (
+                        <div class="flex items-center gap-5">
+                            <div class="w-14 h-14 flex items-center justify-center bg-white text-primary rounded-full text-2xl shrink-0">
+                                <i class={feature.icon} />
+                            </div>
+                            <div class="space-y-3">
+                                <h2 class="font-medium text-primary">
+                                    {feature.title}
+                                </h2>
+                                <p>{feature.description}</p>
+                            </div>
+                        </div>
+                    ))
+            }
         </div>
     </div>
 
