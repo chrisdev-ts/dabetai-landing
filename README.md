@@ -1,58 +1,115 @@
-# Landing Page del Proyecto Integrador
+# dabetai Landing - Página de aterrizaje oficial
 
-Este repositorio contiene la **Landing Page** del Proyecto Integrador.
+Landing page oficial de la plataforma dabetai, diseñada para presentar el proyecto integrador, sus funcionalidades y motivar a usuarios a conocer más.
 
-## Diseño de la Landing Page
+<p align="center">
+  <img src="https://img.shields.io/badge/Astro-2.x-blue?logo=astro" alt="Astro version">
+  <img src="https://img.shields.io/badge/Tailwind_CSS-4.x-teal?logo=tailwindcss" alt="Tailwind CSS version">
+</p>
 
-El diseño de la landing page fue creado en **Figma**. Puedes ver el diseño original del proyecto en el siguiente enlace:
+## 📱 Capturas de pantalla
 
-[Figma - Diseño de la Landing Page](https://www.figma.com/design/16heabsRtywk3KXB4DbMez/Landing-page---PI?node-id=0-1&t=MQuYqgvw4P9u6pHp-1)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/fe8315ce-3645-4ea7-9c61-236f81fbcbd1" alt="Pantalla de login"/>
+</p>
 
----
+## 🩺 ¿Qué es dabetai Landing?
 
-## Tecnologías Utilizadas
+**dabetai Landing** es la página de presentación oficial de la plataforma dabetai. Su objetivo es informar y motivar a usuarios a conocer el ecosistema, destacando:
 
-- **Astro**: Framework para construir sitios web rápidos, ideal para renderizar páginas estáticas y optimizar la carga.
-- **Tailwind CSS**: Framework CSS para un diseño eficiente y flexible, basado en utilidades.
-
----
-
-## Secciones de la Landing Page
-
-![Landing Page Completa](https://github.com/user-attachments/assets/fe8315ce-3645-4ea7-9c61-236f81fbcbd1)
-
-Las secciones mostradas en la imagen son las siguientes:
-
-1. **Hero**: La sección principal que presenta una introducción visual atractiva.
-2. **How it Works - Mobile**: Explicación del funcionamiento de la aplicación móvil.
-3. **How it Works - Web**: La misma explicación, pero adaptada para la versión de escritorio.
-4. **Features - Mobile**: Presentación de las características de la aplicación móvil.
-5. **CTA - Mobile**: Llamada a la acción (Call to Action) en la aplicación móvil.
-6. **Features - Web**: Las mismas características, pero en la vista de escritorio.
-7. **CTA - Web**: Llamada a la acción para la versión web.
-8. **FAQ**: Sección donde se resuelven las preguntas frecuentes.
-9. **Footer**: El pie de página con la información de contacto y redes sociales.
+- Descripción general del proyecto y sus beneficios
+- Acceso rápido a las aplicaciones para médicos y pacientes
+- Explicación de funcionalidades clave y ventajas tecnológicas
+- Recursos para comenzar y enlaces a los repositorios principales
 
 ---
 
-## Instrucciones para la instalación
+## ✨ Funcionalidades principales
 
-1. Clona este repositorio:
-   ```bash
-   git clone https://github.com/chrisdev-ts/landing-pi.git
-   ```
+1. **Hero** - Introducción visual atractiva
+2. **How it Works (Mobile y Web)** - Explicación funcional para móviles y escritorio
+3. **Features (Mobile y Web)** - Presentación de características clave
+4. **Call to Action (CTA)** - Invitaciones a la interacción y descarga
+5. **FAQ** - Preguntas frecuentes para resolver dudas
+6. **Footer** - Información de contacto y redes sociales
 
-2. Dirigete al directorio del proyecto
-    ```bash
-    cd landing-pi
-    ```
+---
 
-3. Instala las dependencias
-    ```bash
-    npm install
-    ```
+## 🛠 Tecnologías
 
-4. Inicia el servidor
-    ```bash
-    npm run dev
-    ```
+- **Astro** - Framework para sitios estáticos y carga optimizada
+- **Tailwind CSS** - Framework CSS utilitario para estilos rápidos y adaptables
+
+---
+
+## ⚡ Instalación rápida
+
+### Prerrequisitos
+
+- Node.js (v18 o superior)
+- npm o yarn
+
+### Pasos
+
+1. **Clonar repositorio**
+
+```bash
+git clone https://github.com/chrisdev-ts/dabetai-landing.git
+cd dabetai-landing
+```
+
+2. **Instalar dependencias**
+
+```bash
+npm install
+```
+
+3. **Iniciar servidor de desarrollo**
+
+```bash
+npm run dev
+```
+
+4. **Abrir en navegador**
+
+Por defecto: `http://localhost:3000`
+
+---
+
+## 🏗 Ecosistema dabetai: nuestros repositorios
+
+dabetai está compuesto por múltiples repositorios especializados:
+
+| Repositorio                                                             | Propósito                   | Estado          |
+| ----------------------------------------------------------------------- | --------------------------- | --------------- |
+| **[dabetai-mobileapp](https://github.com/Fermin-Cardenas/dabetai-mobileapp)** | App para pacientes          | ✅ En desarrollo |
+| **[dabetai-webapp](https://github.com/chrisdev-ts/dabetai-webapp)**     | App web para médicos        | ✅ En desarrollo |
+| **[dabetai-aiapi](https://github.com/aleor25/dabetai-aiapi)**           | API de IA y predicciones    | ✅ En desarrollo |
+| **[dabetai-aimodels](https://github.com/chrisdev-ts/dabetai-aimodels)** | Modelos de machine learning | ✅ En desarrollo |
+| **[dabetai-landing](https://github.com/chrisdev-ts/dabetai-landing)**   | Página de aterrizaje        | ✅ En desarrollo |
+| **[dabetai-api](https://github.com/chrisdev-ts/dabetai-api)**                                                         | API principal del backend   | ✅ En desarrollo |
+
+---
+
+## 🤝 Colaboración interna
+
+Seguimos convenciones específicas para mantener consistencia - consulta [CONTRIBUTING.MD](CONTRIBUTING.MD).
+
+---
+
+## 🤝 Reconocimientos
+
+Este proyecto fue desarrollado por el equipo de autores:
+
+- Cardenas Cabal Fermín
+- Ortiz Pérez Alejandro
+- Serrano Puertos Jorge Christian
+
+Con la asesoría y guía conceptual de:
+
+- Guarneros Nolasco Luis Rolando
+- Cruz Ramos Nancy Aracely
+
+Y con el apoyo académico de la
+
+- Universidad Tecnológica del Centro de Veracruz
